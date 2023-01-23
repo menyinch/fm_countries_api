@@ -1,0 +1,41 @@
+.dark {
+	background-color: var(--dark-mode-bg);
+	color: var(--white);
+}
+.dark a {
+	color: var(--white);
+}
+
+.dark nav,
+.dark .inside-container,
+.dark .input-block input,
+.dark .select-region,
+.dark .region-list,
+.dark .back a,
+.dark .border-country {
+	-webkit-box-shadow: 0px 7px 6px -4px rgba(4, 4, 4, 0.27);
+	box-shadow: 0px 7px 6px -4px rgba(9, 9, 9, 0.27);
+	background-color: var(--dark-mode-elements);
+}
+
+.dark .input-block input,
+.dark .select-region {
+	color: var(--white);
+}
+.dark .region-list option {
+	color: var(--white);
+}
+.dark .input-block input::placeholder {
+	color: var(--white);
+}
+.dark .search-icon {
+	color: var(--white);
+}
+
+.dark .region-list {
+	color: var(--white);
+}
+
+.dark .border-country {
+	color: var(--white);
+}
