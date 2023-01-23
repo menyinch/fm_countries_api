@@ -18,7 +18,7 @@ export const CountryList = () => {
 		} catch (error) {
 			console.log(error);
 		} finally {
-			setIsLoading(true);
+			setIsLoading(false);
 		}
 	}, []);
 
@@ -39,10 +39,12 @@ export const CountryList = () => {
 		}
 	};
 
-	if (!isLoading) {
-		<div className='searching-block'>
-			<h2 className='searching-h1'>Searching...</h2>
-		</div>;
+	if (isLoading) {
+		return (
+			<div className='searching-block'>
+				<h2 className='searching-h1'>Searching...</h2>
+			</div>
+		);
 	}
 
 	return (
