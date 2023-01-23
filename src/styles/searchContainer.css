@@ -143,3 +143,19 @@ details[open] summary:after {
 	letter-spacing: 1px;
 	font-weight: 400;
 }
+
+@media screen and (max-width: 600px) {
+	.search-section {
+		flex-direction: column;
+		padding: 2.8rem 1rem;
+	}
+	.input-block {
+		width: 100%;
+	}
+	.select-region {
+		width: 70%;
+	}
+	.region-list {
+		width: 100%;
+	}
+}

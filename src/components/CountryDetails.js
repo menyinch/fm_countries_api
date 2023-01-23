@@ -38,7 +38,7 @@ export const CountryDetails = () => {
 					<img className='country-image' src={country.flags.png} alt={country.name} />
 				</div>
 				<div className='country-block-info'>
-					<h2>{country.name}</h2>
+					<h2 className='country-name'>{country.name}</h2>
 					<div className='details-block'>
 						<div className='details-block-one'>
 							<p>
@@ -72,17 +72,19 @@ export const CountryDetails = () => {
 					</div>
 					<div className='border-countries'>
 						<p className='border-countries-title'>Border Countries:</p>
-						{borderGroup?.length ? (
-							borderGroup.map((code) => (
-								<Link key={code} className='border-country' to={`/${code}`}>
-									{code}
+						<div className='border-countries-list'>
+							{borderGroup?.length ? (
+								borderGroup.map((code) => (
+									<Link key={code} className='border-country' to={`/${code}`}>
+										{code}
+									</Link>
+								))
+							) : (
+								<Link to='/' className='border-country-none'>
+									No Borders...
 								</Link>
-							))
-						) : (
-							<Link to='/' className='border-country-none'>
-								No Borders...
-							</Link>
-						)}
+							)}
+						</div>
 					</div>
 				</div>
 			</div>

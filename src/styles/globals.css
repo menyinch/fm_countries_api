@@ -33,6 +33,11 @@ a {
 	text-align: center;
 }
 
+.siteTitle {
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+
 .container-block {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -123,6 +128,16 @@ a {
 	nav {
 		padding: 1rem;
 	}
+
+	.header {
+		padding: 0px 16px;
+	}
+
+	.siteTitle {
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
 	.input-block {
 		width: 20rem;
 	}

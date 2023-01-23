@@ -3,13 +3,11 @@ import { Toggle } from './';
 
 export const Header = () => {
 	return (
-		<nav>
+		<nav className='header'>
 			<Link to='/'>
-				<h1>Where in the world?</h1>
+				<h1 className='siteTitle'>Where in the world?</h1>
 			</Link>
-			<div>
-				<Toggle />
-			</div>
+			<Toggle />
 		</nav>
 	);
 };
