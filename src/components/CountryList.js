@@ -57,13 +57,13 @@ export const CountryList = () => {
 			{searchInput.length > 0 ? (
 				<div className='container-block'>
 					{filtered.map((filteredCountry) => (
-						<CountryCard {...filteredCountry} />
+						<CountryCard key={filteredCountry.alpha3Code} {...filteredCountry} />
 					))}
 				</div>
 			) : (
 				<div className='container-block'>
 					{countries.map((country) => (
-						<CountryCard {...country} />
+						<CountryCard key={country.alpha3Code} {...country} />
 					))}
 				</div>
 			)}
