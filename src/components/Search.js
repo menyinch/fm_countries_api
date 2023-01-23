@@ -50,7 +50,7 @@ export const Search = ({ searchCountries, searchInput, setCountries }) => {
 				/>
 			</div>
 			<details className='select-region' id='regions'>
-				<summary>Filter by Region</summary>
+				<summary>{region.name !== 'all' ? region.label : 'Filter by Region'}</summary>
 				<div className='region-list'>
 					{regions.map((region) => (
 						<option key={region.name} onClick={handleClick} value={region.name}>
