@@ -26,6 +26,15 @@ export const CountryList = () => {
 		fetchCountries();
 	}, [fetchCountries]);
 
+	useEffect(() => {
+		if (searchInput.trim()) {
+			const filteredCountries = countries.filter((country) =>
+				Object.values(country).join('').toLowerCase().includes(searchInput.toLowerCase())
+			);
+			setFiltered(filteredCountries);
+		}
+	}, [countries]);
+
 	const searchCountries = (searchValue) => {
 		setSearchInput(searchValue);
 
