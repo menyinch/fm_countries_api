@@ -40,10 +40,11 @@ a {
 
 .container-block {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-columns: repeat(auto-fit, 16.5rem);
 	row-gap: 4.7rem;
 	column-gap: 4.5rem;
 	width: 89%;
+	max-width: 1280px;
 	margin: 0 auto;
 }
 
@@ -95,7 +96,7 @@ a {
 	}
 }
 
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1430px) {
 	.container-block {
 		grid-template-columns: repeat(3, 1fr);
 		row-gap: 2rem;
